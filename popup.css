@@ -1,0 +1,92 @@
+body {
+  background-color: #f3f3f3; /* lilás claro */
+  color: #333; /* preto */
+  font-family: Arial, sans-serif;
+  width: 400px; /* Ajuste a largura conforme necessário */
+  height: 220px; /* Ajuste a altura conforme necessário */
+  padding: 20px; /* Adicione preenchimento interno para espaçamento */ 
+}
+
+h1 {
+  color: #6a0dad; /* lilás */
+  text-align: -5px; /* Centraliza o texto */
+  margin-top: -10px; /* Espaçamento superior */
+  margin-left: +60px;
+}
+
+p1 {
+  color: #000000; /* lilás */
+  text-align: center; /* Centraliza o texto */
+  margin-top: +10px; /* Espaçamento superior */
+  margin-left: +60px;
+}
+
+button {
+  background-color: #6a0dad; /* lilás */
+  color: rgb(255, 255, 255); /* branco */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block; /* Para ocupar toda a largura do contêiner */
+  margin: 0 auto; /* Centraliza o botão horizontalmente */
+  margin-top: 20px; /* Espaçamento superior */
+  border-radius: 5px;
+}
+
+#mensagem {
+  text-align: center; /* Centraliza o texto */
+}
+
+#funcionando {
+  text-align: bottom; /* Centraliza o texto */
+}
+
+#navegadores {
+  text-align: bottom; /* Centraliza o texto */
+}
+
+#creditos {
+  text-align: right; /* Centraliza o texto */
+}
+
+.slide-container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  margin-top: 20px; /* Adicione um espaço superior */
+}
+
+.toggle {
+  display: none;
+}
+
+.toggle + label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: background-color 0.4s;
+}
+
+.toggle + label:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.4s;
+}
+
+.toggle:checked + label {
+  background-color: #6a0dad; /* lilás */
+}
+
+.toggle:checked + label:before {
+  transform: translateX(26px);
+}

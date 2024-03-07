@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Anti Spoiler",
+  "version": "1.0",
+  "permissions": ["storage"],
+  "description": "Fugindo de spoilers sempre que possível.", 
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png",
+      "512": "icon512.png"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png",
+    "512": "icon512.png"
+  },
+  "web_accessible_resources": [
+    "lista_palavras.html",
+    "lista_palavras.js"
+  ]
+}

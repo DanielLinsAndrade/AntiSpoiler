@@ -1,0 +1,115 @@
+body {
+    background-color: #f3f3f3; /* lilás claro */
+    color: #333; /* preto */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px; /* Espaço para o nome da lista */
+  }
+  
+  h1 {
+    color: #6a0dad; /* lilás */
+    font-size: 4em; /* Tamanho grande do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+  }
+  
+  .input-and-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Espaço maior entre o campo de inserção e os botões */
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px; /* Espaço maior entre o campo de inserção e os botões */
+  }
+  
+  input[type="text"] {
+    padding: 12px; /* Tamanho aumentado do campo de entrada */
+    border: 1px solid #6a0dad; /* lilás */
+    margin-right: 10px;
+    width: 600px; /* Largura dobrada do campo de entrada */
+    border-radius: 4px;
+  }
+  
+  button#salvarBotao {
+    background-color: #6a0dad; /* lilás */
+    color: white; /* branco */
+    border: none;
+    padding: 12px; /* Tamanho ajustado para altura equivalente ao campo de entrada */
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Aproximando um pouco mais os botões do campo de inserção */
+  }
+  
+  .buttons-container button {
+    margin-right: 10px;
+    background-color: #6a0dad; /* lilás */
+    color: white; /* branco */
+    border: none;
+    padding: 12px 30px; /* Tamanho ajustado dos botões */
+    cursor: pointer;
+  }
+  
+  .buttons-container button#selecionarTodos {
+    margin-right: 10px; /* Aproximando mais o botão "Selecionar Todos" do campo de inserção */
+    margin-top: -40px; /* Subindo um pouco o botão "Selecionar Todos" */
+    border-radius: 4px;
+  }
+  
+  .buttons-container button#deletarSelecionados {
+    margin-left: 10px; /* Aproximando mais o botão "Deletar Selecionados" do campo de inserção */
+    margin-top: -40px; /* Subindo um pouco o botão "Deletar Selecionados" */
+    border-radius: 4px;
+  }
+  
+  .words-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .word-container {
+    background-color: #ddd; /* Cor de fundo cinza claro */
+    color: #333; /* Cor do texto preto */
+    padding: 10px; /* Espaçamento interno */
+    margin: 5px; /* Margem externa */
+    border-radius: 5px; /* Bordas arredondadas */
+    display: block; /* Faz com que cada palavra seja exibida em sua própria linha */
+    width: 100%; /* Define a largura da div como 100% */
+  }
+  
+  .styled-word {
+    background-color: #ddd; /* cinza claro */
+    color: #333; /* preto */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block; /* Garante que cada palavra fique dentro de um retângulo */
+}
+
+li {
+  background-color: #ddd; /* Cor de fundo cinza claro */
+  color: #333; /* Cor do texto preto */
+  padding: 20px; /* Espaçamento interno aumentado */
+  margin: 3px 0; /* Margem externa (superior e inferior) */
+  margin-right: 70px;
+  margin-left: 30px;
+  border-radius: 4px; /* Bordas arredondadas */
+  display: block; /* Faz com que cada <li> seja exibido em uma linha separada */
+  width: 680px; /* Largura desejada */
+  height: 10px; /* Altura desejada */
+  display: flex; /* Usa flexbox para alinhar conteúdo */
+  align-items: center; /* Alinha o conteúdo verticalmente */
+  justify-content: space-between;
+}
+
